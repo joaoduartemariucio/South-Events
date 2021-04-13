@@ -31,6 +31,11 @@
 		F692BD5926264F55004C2148 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD5826264F55004C2148 /* UIColor+Extensions.swift */; };
 		F692BD70262650C8004C2148 /*  InfoStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F692BD72262650C8004C2148 /*  InfoStrings.strings */; };
 		F692BD76262650CB004C2148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F692BD78262650CB004C2148 /* Localizable.strings */; };
+		F692BD8526265295004C2148 /* EventosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD8426265295004C2148 /* EventosRouter.swift */; };
+		F692BD8A262652F6004C2148 /* EventosClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD89262652F6004C2148 /* EventosClient.swift */; };
+		F692BD8F26265329004C2148 /* EventosCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD8E26265329004C2148 /* EventosCodable.swift */; };
+		F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */; };
+		F692BD9D262658B6004C2148 /* TelaInicialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD9C262658B6004C2148 /* TelaInicialModel.swift */; };
 		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +95,11 @@
 		F692BD77262650CB004C2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F692BD7C262650FC004C2148 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ InfoStrings.strings"; sourceTree = "<group>"; };
 		F692BD80262650FC004C2148 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F692BD8426265295004C2148 /* EventosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosRouter.swift; sourceTree = "<group>"; };
+		F692BD89262652F6004C2148 /* EventosClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosClient.swift; sourceTree = "<group>"; };
+		F692BD8E26265329004C2148 /* EventosCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosCodable.swift; sourceTree = "<group>"; };
+		F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+DecodeHelpers.swift"; sourceTree = "<group>"; };
+		F692BD9C262658B6004C2148 /* TelaInicialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialModel.swift; sourceTree = "<group>"; };
 		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +234,7 @@
 		F692BCDE2626495A004C2148 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD9B2626589F004C2148 /* TelaInicial */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 		F692BCE7262649DB004C2148 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -337,6 +349,7 @@
 		F692BCF926264AE6004C2148 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD8426265295004C2148 /* EventosRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -344,6 +357,7 @@
 		F692BCFA26264AEF004C2148 /* Codable */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD8E26265329004C2148 /* EventosCodable.swift */,
 			);
 			path = Codable;
 			sourceTree = "<group>";
@@ -351,6 +365,7 @@
 		F692BCFB26264AF5004C2148 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD89262652F6004C2148 /* EventosClient.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -376,6 +391,14 @@
 			isa = PBXGroup;
 			children = (
 				F692BD5026264E20004C2148 /* TelaInicialViewModel.swift */,
+			);
+			path = TelaInicial;
+			sourceTree = "<group>";
+		};
+		F692BD9B2626589F004C2148 /* TelaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD9C262658B6004C2148 /* TelaInicialModel.swift */,
 			);
 			path = TelaInicial;
 			sourceTree = "<group>";
@@ -620,12 +643,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F692BD9D262658B6004C2148 /* TelaInicialModel.swift in Sources */,
+				F692BD8526265295004C2148 /* EventosRouter.swift in Sources */,
 				F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */,
 				F692BCED26264A10004C2148 /* Constants.swift in Sources */,
 				F692BCFD26264B04004C2148 /* APIClient.swift in Sources */,
 				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
+				F692BD8F26265329004C2148 /* EventosCodable.swift in Sources */,
+				F692BD8A262652F6004C2148 /* EventosClient.swift in Sources */,
 				F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
+				F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */,
 				F692BD3D26264D0A004C2148 /* TelaInicialCoordinator.swift in Sources */,
 				F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */,
 				F692BD5126264E20004C2148 /* TelaInicialViewModel.swift in Sources */,
