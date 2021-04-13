@@ -7,23 +7,28 @@
 
 import UIKit
 
-class TelaInicialViewController: UIViewController {
+class TelaInicialViewController: UIViewController, BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    typealias View = TelaInicialView
+    typealias ViewModel = TelaInicialViewModel
+    typealias Navigation = TelaInicialCoordinator
+    
+    var coordinator: TelaInicialCoordinator?
+    var disposable: DisposeBag = DisposeBag()
+    var viewModel: TelaInicialViewModel = TelaInicialViewModel()
+    var presentationView: TelaInicialView = TelaInicialView()
+    
+    override func loadView() {
+        view = presentationView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bindView()
+        viewModel.viewDidLoad()
     }
-    */
-
+    
+    func bindView() {
+        
+    }
 }

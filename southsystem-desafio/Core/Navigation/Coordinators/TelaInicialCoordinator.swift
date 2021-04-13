@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCoordinator: Coordinator {
+class TelaInicialCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
@@ -22,6 +22,8 @@ class HomeCoordinator: Coordinator {
     }
     
     func telaInicial(){
-        
+        let vc = TelaInicialViewController()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -24,9 +24,13 @@
 		F692BD1C26264B7E004C2148 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1B26264B7E004C2148 /* Coordinator.swift */; };
 		F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD2026264BAC004C2148 /* TypeAlias.swift */; };
 		F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3626264CCE004C2148 /* MainCoordinator.swift */; };
-		F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */; };
+		F692BD3D26264D0A004C2148 /* TelaInicialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3C26264D0A004C2148 /* TelaInicialCoordinator.swift */; };
 		F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */; };
 		F692BD4B26264D9D004C2148 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD4A26264D9D004C2148 /* TelaInicialView.swift */; };
+		F692BD5126264E20004C2148 /* TelaInicialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD5026264E20004C2148 /* TelaInicialViewModel.swift */; };
+		F692BD5926264F55004C2148 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD5826264F55004C2148 /* UIColor+Extensions.swift */; };
+		F692BD70262650C8004C2148 /*  InfoStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F692BD72262650C8004C2148 /*  InfoStrings.strings */; };
+		F692BD76262650CB004C2148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F692BD78262650CB004C2148 /* Localizable.strings */; };
 		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,9 +81,15 @@
 		F692BD1B26264B7E004C2148 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F692BD2026264BAC004C2148 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		F692BD3626264CCE004C2148 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F692BD3C26264D0A004C2148 /* TelaInicialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialCoordinator.swift; sourceTree = "<group>"; };
 		F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewController.swift; sourceTree = "<group>"; };
 		F692BD4A26264D9D004C2148 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+		F692BD5026264E20004C2148 /* TelaInicialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewModel.swift; sourceTree = "<group>"; };
+		F692BD5826264F55004C2148 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F692BD71262650C8004C2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/ InfoStrings.strings"; sourceTree = "<group>"; };
+		F692BD77262650CB004C2148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F692BD7C262650FC004C2148 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ InfoStrings.strings"; sourceTree = "<group>"; };
+		F692BD80262650FC004C2148 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,16 +169,14 @@
 		F692BC9C26264793004C2148 /* southsystem-desafio */ = {
 			isa = PBXGroup;
 			children = (
-				F692BCDF26264965004C2148 /* Supporting Files */,
 				F692BCDC2626494D004C2148 /* Assets */,
 				F692BCDD26264952004C2148 /* Core */,
 				F692BCDE2626495A004C2148 /* Model */,
+				F692BCDF26264965004C2148 /* Supporting Files */,
 				F692BCE22626497E004C2148 /* UI */,
 				F692BCE026264970004C2148 /* View  */,
 				F692BCE126264975004C2148 /* ViewModel */,
-				F692BCA626264794004C2148 /* Assets.xcassets */,
 				F692BCA826264794004C2148 /* LaunchScreen.storyboard */,
-				F692BCAB26264794004C2148 /* Info.plist */,
 			);
 			path = "southsystem-desafio";
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 		F692BCDC2626494D004C2148 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F692BCA626264794004C2148 /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -222,6 +231,9 @@
 		F692BCDF26264965004C2148 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F692BCAB26264794004C2148 /* Info.plist */,
+				F692BD72262650C8004C2148 /*  InfoStrings.strings */,
+				F692BD78262650CB004C2148 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 		F692BCE126264975004C2148 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD4F26264E0F004C2148 /* TelaInicial */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -300,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				F692BD2026264BAC004C2148 /* TypeAlias.swift */,
+				F692BD5826264F55004C2148 /* UIColor+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -344,7 +358,7 @@
 		F692BD3B26264CED004C2148 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */,
+				F692BD3C26264D0A004C2148 /* TelaInicialCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -352,8 +366,16 @@
 		F692BD4126264D71004C2148 /* TelaInicial */ = {
 			isa = PBXGroup;
 			children = (
-				F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */,
 				F692BD4A26264D9D004C2148 /* TelaInicialView.swift */,
+				F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */,
+			);
+			path = TelaInicial;
+			sourceTree = "<group>";
+		};
+		F692BD4F26264E0F004C2148 /* TelaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD5026264E20004C2148 /* TelaInicialViewModel.swift */,
 			);
 			path = TelaInicial;
 			sourceTree = "<group>";
@@ -448,6 +470,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = F692BC9126264793004C2148;
 			productRefGroup = F692BC9B26264793004C2148 /* Products */;
@@ -467,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */,
+				F692BD76262650CB004C2148 /* Localizable.strings in Resources */,
+				F692BD70262650C8004C2148 /*  InfoStrings.strings in Resources */,
 				F692BCA726264794004C2148 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,10 +626,12 @@
 				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
 				F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
-				F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */,
+				F692BD3D26264D0A004C2148 /* TelaInicialCoordinator.swift in Sources */,
 				F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */,
+				F692BD5126264E20004C2148 /* TelaInicialViewModel.swift in Sources */,
 				F692BD4B26264D9D004C2148 /* TelaInicialView.swift in Sources */,
 				F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */,
+				F692BD5926264F55004C2148 /* UIColor+Extensions.swift in Sources */,
 				F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */,
 				F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */,
 				F692BD0826264B2E004C2148 /* BaseModel.swift in Sources */,
@@ -652,6 +679,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F692BD72262650C8004C2148 /*  InfoStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F692BD71262650C8004C2148 /* en */,
+				F692BD7C262650FC004C2148 /* pt-BR */,
+			);
+			name = " InfoStrings.strings";
+			sourceTree = "<group>";
+		};
+		F692BD78262650CB004C2148 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F692BD77262650CB004C2148 /* en */,
+				F692BD80262650FC004C2148 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -659,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -706,7 +752,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -720,6 +766,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -761,7 +808,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -779,7 +826,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 534P4F9R6Y;
-				INFOPLIST_FILE = "southsystem-desafio/Info.plist";
+				INFOPLIST_FILE = "southsystem-desafio/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -800,7 +847,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 534P4F9R6Y;
-				INFOPLIST_FILE = "southsystem-desafio/Info.plist";
+				INFOPLIST_FILE = "southsystem-desafio/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

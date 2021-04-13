@@ -21,7 +21,7 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func telaInicial(){
-        let child = HomeCoordinator(navigationController: navigationController)
+        let child = TelaInicialCoordinator(navigationController: navigationController)
         child.parentCoordinator = self
         childCoordinators.append(child)
         child.start()
