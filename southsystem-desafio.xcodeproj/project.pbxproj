@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BC9D26264793004C2148 /* AppDelegate.swift */; };
+		F692BCA726264794004C2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA626264794004C2148 /* Assets.xcassets */; };
+		F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA826264794004C2148 /* LaunchScreen.storyboard */; };
+		F692BCB526264794004C2148 /* southsystem_desafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCB426264794004C2148 /* southsystem_desafioTests.swift */; };
+		F692BCC026264794004C2148 /* southsystem_desafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F692BCB126264794004C2148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F692BC9226264793004C2148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F692BC9926264793004C2148;
+			remoteInfo = "southsystem-desafio";
+		};
+		F692BCBC26264794004C2148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F692BC9226264793004C2148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F692BC9926264793004C2148;
+			remoteInfo = "southsystem-desafio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F692BC9A26264793004C2148 /* southsystem-desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "southsystem-desafio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F692BC9D26264793004C2148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F692BCA626264794004C2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F692BCA926264794004C2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F692BCAB26264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F692BCB026264794004C2148 /* southsystem-desafioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "southsystem-desafioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F692BCB426264794004C2148 /* southsystem_desafioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = southsystem_desafioTests.swift; sourceTree = "<group>"; };
+		F692BCB626264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F692BCBB26264794004C2148 /* southsystem-desafioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "southsystem-desafioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = southsystem_desafioUITests.swift; sourceTree = "<group>"; };
+		F692BCC126264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F692BC9726264793004C2148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCAD26264794004C2148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCB826264794004C2148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F692BC9126264793004C2148 = {
+			isa = PBXGroup;
+			children = (
+				F692BC9C26264793004C2148 /* southsystem-desafio */,
+				F692BCB326264794004C2148 /* southsystem-desafioTests */,
+				F692BCBE26264794004C2148 /* southsystem-desafioUITests */,
+				F692BC9B26264793004C2148 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F692BC9B26264793004C2148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F692BC9A26264793004C2148 /* southsystem-desafio.app */,
+				F692BCB026264794004C2148 /* southsystem-desafioTests.xctest */,
+				F692BCBB26264794004C2148 /* southsystem-desafioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F692BC9C26264793004C2148 /* southsystem-desafio */ = {
+			isa = PBXGroup;
+			children = (
+				F692BC9D26264793004C2148 /* AppDelegate.swift */,
+				F692BCA626264794004C2148 /* Assets.xcassets */,
+				F692BCA826264794004C2148 /* LaunchScreen.storyboard */,
+				F692BCAB26264794004C2148 /* Info.plist */,
+			);
+			path = "southsystem-desafio";
+			sourceTree = "<group>";
+		};
+		F692BCB326264794004C2148 /* southsystem-desafioTests */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCB426264794004C2148 /* southsystem_desafioTests.swift */,
+				F692BCB626264794004C2148 /* Info.plist */,
+			);
+			path = "southsystem-desafioTests";
+			sourceTree = "<group>";
+		};
+		F692BCBE26264794004C2148 /* southsystem-desafioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */,
+				F692BCC126264794004C2148 /* Info.plist */,
+			);
+			path = "southsystem-desafioUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F692BC9926264793004C2148 /* southsystem-desafio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F692BCC426264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafio" */;
+			buildPhases = (
+				F692BC9626264793004C2148 /* Sources */,
+				F692BC9726264793004C2148 /* Frameworks */,
+				F692BC9826264793004C2148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "southsystem-desafio";
+			productName = "southsystem-desafio";
+			productReference = F692BC9A26264793004C2148 /* southsystem-desafio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F692BCAF26264794004C2148 /* southsystem-desafioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F692BCC726264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioTests" */;
+			buildPhases = (
+				F692BCAC26264794004C2148 /* Sources */,
+				F692BCAD26264794004C2148 /* Frameworks */,
+				F692BCAE26264794004C2148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F692BCB226264794004C2148 /* PBXTargetDependency */,
+			);
+			name = "southsystem-desafioTests";
+			productName = "southsystem-desafioTests";
+			productReference = F692BCB026264794004C2148 /* southsystem-desafioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F692BCBA26264794004C2148 /* southsystem-desafioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F692BCCA26264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioUITests" */;
+			buildPhases = (
+				F692BCB726264794004C2148 /* Sources */,
+				F692BCB826264794004C2148 /* Frameworks */,
+				F692BCB926264794004C2148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F692BCBD26264794004C2148 /* PBXTargetDependency */,
+			);
+			name = "southsystem-desafioUITests";
+			productName = "southsystem-desafioUITests";
+			productReference = F692BCBB26264794004C2148 /* southsystem-desafioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F692BC9226264793004C2148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F692BC9926264793004C2148 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F692BCAF26264794004C2148 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F692BC9926264793004C2148;
+					};
+					F692BCBA26264794004C2148 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F692BC9926264793004C2148;
+					};
+				};
+			};
+			buildConfigurationList = F692BC9526264793004C2148 /* Build configuration list for PBXProject "southsystem-desafio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F692BC9126264793004C2148;
+			productRefGroup = F692BC9B26264793004C2148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F692BC9926264793004C2148 /* southsystem-desafio */,
+				F692BCAF26264794004C2148 /* southsystem-desafioTests */,
+				F692BCBA26264794004C2148 /* southsystem-desafioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F692BC9826264793004C2148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */,
+				F692BCA726264794004C2148 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCAE26264794004C2148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCB926264794004C2148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F692BC9626264793004C2148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCAC26264794004C2148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692BCB526264794004C2148 /* southsystem_desafioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F692BCB726264794004C2148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F692BCC026264794004C2148 /* southsystem_desafioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F692BCB226264794004C2148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F692BC9926264793004C2148 /* southsystem-desafio */;
+			targetProxy = F692BCB126264794004C2148 /* PBXContainerItemProxy */;
+		};
+		F692BCBD26264794004C2148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F692BC9926264793004C2148 /* southsystem-desafio */;
+			targetProxy = F692BCBC26264794004C2148 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F692BCA826264794004C2148 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F692BCA926264794004C2148 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F692BCC226264794004C2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F692BCC326264794004C2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F692BCC526264794004C2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F692BCC626264794004C2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafio";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F692BCC826264794004C2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/southsystem-desafio.app/southsystem-desafio";
+			};
+			name = Debug;
+		};
+		F692BCC926264794004C2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/southsystem-desafio.app/southsystem-desafio";
+			};
+			name = Release;
+		};
+		F692BCCB26264794004C2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "southsystem-desafio";
+			};
+			name = Debug;
+		};
+		F692BCCC26264794004C2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = "southsystem-desafioUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafioUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "southsystem-desafio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F692BC9526264793004C2148 /* Build configuration list for PBXProject "southsystem-desafio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F692BCC226264794004C2148 /* Debug */,
+				F692BCC326264794004C2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F692BCC426264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F692BCC526264794004C2148 /* Debug */,
+				F692BCC626264794004C2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F692BCC726264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F692BCC826264794004C2148 /* Debug */,
+				F692BCC926264794004C2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F692BCCA26264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F692BCCB26264794004C2148 /* Debug */,
+				F692BCCC26264794004C2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F692BC9226264793004C2148 /* Project object */;
+}
