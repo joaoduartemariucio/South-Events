@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1626264B72004C2148 /* BaseViewModel.swift */; };
 		F692BD1C26264B7E004C2148 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1B26264B7E004C2148 /* Coordinator.swift */; };
 		F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD2026264BAC004C2148 /* TypeAlias.swift */; };
+		F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3626264CCE004C2148 /* MainCoordinator.swift */; };
+		F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */; };
 		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		F692BD1626264B72004C2148 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F692BD1B26264B7E004C2148 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F692BD2026264BAC004C2148 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		F692BD3626264CCE004C2148 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +127,6 @@
 				31689151DF750258151088EB /* Pods-southsystem-desafioTests.debug.xcconfig */,
 				1A1D536660C615D26AE87843 /* Pods-southsystem-desafioTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,6 +278,8 @@
 		F692BCE6262649CE004C2148 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD3B26264CED004C2148 /* Coordinators */,
+				F692BD3626264CCE004C2148 /* MainCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -329,6 +334,14 @@
 			children = (
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		F692BD3B26264CED004C2148 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +586,8 @@
 				F692BCFD26264B04004C2148 /* APIClient.swift in Sources */,
 				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
+				F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */,
+				F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */,
 				F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */,
 				F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */,
 				F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */,
