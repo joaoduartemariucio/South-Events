@@ -16,6 +16,11 @@ struct Constants {
             static let baseURL = "http://5f5a8f24d44d640016169133.mockapi.io/api"
         }
         
+        struct Routes {
+            static let buscarEventos = "/events"
+            static let fazerCheckin = "/checkin"
+        }
+        
         struct ParametersKeys {
             
         }
@@ -23,11 +28,11 @@ struct Constants {
     
     struct APP {
         
-        struct KEY {
+        struct Key {
             
         }
         
-        struct IMAGE {
+        struct Image {
             
         }
     }

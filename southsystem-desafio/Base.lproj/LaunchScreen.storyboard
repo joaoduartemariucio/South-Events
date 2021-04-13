@@ -23,8 +23,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by João Vitor Duarte Mariucio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ol-Nn-MaM">
-                                <rect key="frame" x="50" y="841" width="314" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by João Vitor Duarte Mariucio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ol-Nn-MaM">
+                                <rect key="frame" x="50" y="850.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LCw-bH-sgP" secondAttribute="trailing" constant="50" id="YiJ-u4-YiH"/>
                             <constraint firstItem="LCw-bH-sgP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="d9h-zA-maJ"/>
                             <constraint firstItem="8Ol-Nn-MaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="dA5-xr-uFW"/>
-                            <constraint firstItem="8Ol-Nn-MaM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pUj-BX-M5U"/>
+                            <constraint firstItem="8Ol-Nn-MaM" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="-25" id="pUj-BX-M5U"/>
                         </constraints>
                     </view>
                 </viewController>
