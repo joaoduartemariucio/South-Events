@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554406EA000E10C1E96A93A1 /* Pods_southsystem_desafioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E2ECF453F1A8E4A239C491 /* Pods_southsystem_desafioTests.framework */; };
+		5B327BDEA5E8DEC2D2699672 /* Pods_southsystem_desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8768E2A767C1C216F1AB18 /* Pods_southsystem_desafio.framework */; };
 		F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BC9D26264793004C2148 /* AppDelegate.swift */; };
 		F692BCA726264794004C2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA626264794004C2148 /* Assets.xcassets */; };
 		F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA826264794004C2148 /* LaunchScreen.storyboard */; };
 		F692BCB526264794004C2148 /* southsystem_desafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCB426264794004C2148 /* southsystem_desafioTests.swift */; };
 		F692BCC026264794004C2148 /* southsystem_desafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */; };
+		F692BCED26264A10004C2148 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCEC26264A10004C2148 /* Constants.swift */; };
+		F692BCFD26264B04004C2148 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCFC26264B04004C2148 /* APIClient.swift */; };
+		F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD0226264B1A004C2148 /* APIConfiguration.swift */; };
+		F692BD0826264B2E004C2148 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD0726264B2E004C2148 /* BaseModel.swift */; };
+		F692BD0D26264B45004C2148 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD0C26264B45004C2148 /* BaseView.swift */; };
+		F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1126264B5D004C2148 /* BaseViewController.swift */; };
+		F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1626264B72004C2148 /* BaseViewModel.swift */; };
+		F692BD1C26264B7E004C2148 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD1B26264B7E004C2148 /* Coordinator.swift */; };
+		F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD2026264BAC004C2148 /* TypeAlias.swift */; };
+		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E200B9486582D48350BA474 /* Pods-southsystem-desafio-southsystem-desafioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.release.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16E2ECF453F1A8E4A239C491 /* Pods_southsystem_desafioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_southsystem_desafioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1D536660C615D26AE87843 /* Pods-southsystem-desafioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafioTests.release.xcconfig"; path = "Target Support Files/Pods-southsystem-desafioTests/Pods-southsystem-desafioTests.release.xcconfig"; sourceTree = "<group>"; };
+		31689151DF750258151088EB /* Pods-southsystem-desafioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafioTests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafioTests/Pods-southsystem-desafioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53277C5E19A68E9A28373472 /* Pods-southsystem-desafio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio.debug.xcconfig"; sourceTree = "<group>"; };
+		BA8768E2A767C1C216F1AB18 /* Pods_southsystem_desafio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_southsystem_desafio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88CD9C1EC2789C6BD3ED5BA /* Pods-southsystem-desafio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio.release.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio.release.xcconfig"; sourceTree = "<group>"; };
+		CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_southsystem_desafio_southsystem_desafioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BC9A26264793004C2148 /* southsystem-desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "southsystem-desafio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BC9D26264793004C2148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F692BCA626264794004C2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +63,16 @@
 		F692BCBB26264794004C2148 /* southsystem-desafioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "southsystem-desafioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = southsystem_desafioUITests.swift; sourceTree = "<group>"; };
 		F692BCC126264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F692BCEC26264A10004C2148 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F692BCFC26264B04004C2148 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F692BD0226264B1A004C2148 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		F692BD0726264B2E004C2148 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		F692BD0C26264B45004C2148 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F692BD1126264B5D004C2148 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F692BD1626264B72004C2148 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F692BD1B26264B7E004C2148 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F692BD2026264BAC004C2148 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B327BDEA5E8DEC2D2699672 /* Pods_southsystem_desafio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554406EA000E10C1E96A93A1 /* Pods_southsystem_desafioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +96,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1EAB19D7CF8C33852553B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA8768E2A767C1C216F1AB18 /* Pods_southsystem_desafio.framework */,
+				CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */,
+				16E2ECF453F1A8E4A239C491 /* Pods_southsystem_desafioTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C48CE481CEC704AE908DC3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53277C5E19A68E9A28373472 /* Pods-southsystem-desafio.debug.xcconfig */,
+				C88CD9C1EC2789C6BD3ED5BA /* Pods-southsystem-desafio.release.xcconfig */,
+				FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */,
+				0E200B9486582D48350BA474 /* Pods-southsystem-desafio-southsystem-desafioUITests.release.xcconfig */,
+				31689151DF750258151088EB /* Pods-southsystem-desafioTests.debug.xcconfig */,
+				1A1D536660C615D26AE87843 /* Pods-southsystem-desafioTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F692BC9126264793004C2148 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +134,8 @@
 				F692BCB326264794004C2148 /* southsystem-desafioTests */,
 				F692BCBE26264794004C2148 /* southsystem-desafioUITests */,
 				F692BC9B26264793004C2148 /* Products */,
+				2C48CE481CEC704AE908DC3A /* Pods */,
+				2C1EAB19D7CF8C33852553B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +152,13 @@
 		F692BC9C26264793004C2148 /* southsystem-desafio */ = {
 			isa = PBXGroup;
 			children = (
-				F692BC9D26264793004C2148 /* AppDelegate.swift */,
+				F692BCDF26264965004C2148 /* Supporting Files */,
+				F692BCDC2626494D004C2148 /* Assets */,
+				F692BCDD26264952004C2148 /* Core */,
+				F692BCDE2626495A004C2148 /* Model */,
+				F692BCE22626497E004C2148 /* UI */,
+				F692BCE026264970004C2148 /* View  */,
+				F692BCE126264975004C2148 /* ViewModel */,
 				F692BCA626264794004C2148 /* Assets.xcassets */,
 				F692BCA826264794004C2148 /* LaunchScreen.storyboard */,
 				F692BCAB26264794004C2148 /* Info.plist */,
@@ -119,6 +184,153 @@
 			path = "southsystem-desafioUITests";
 			sourceTree = "<group>";
 		};
+		F692BCDC2626494D004C2148 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F692BCDD26264952004C2148 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCEB262649F4004C2148 /* App */,
+				F692BCEA262649ED004C2148 /* Contants */,
+				F692BCE8262649E1004C2148 /* Extension */,
+				F692BCE7262649DB004C2148 /* Helper */,
+				F692BCE6262649CE004C2148 /* Navigation */,
+				F692BCE5262649BF004C2148 /* Networking */,
+				F692BCE4262649AD004C2148 /* Protocol */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F692BCDE2626495A004C2148 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F692BCDF26264965004C2148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F692BCE026264970004C2148 /* View  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
+		F692BCE126264975004C2148 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F692BCE22626497E004C2148 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCE326264983004C2148 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F692BCE326264983004C2148 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F692BCE4262649AD004C2148 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD0726264B2E004C2148 /* BaseModel.swift */,
+				F692BD0C26264B45004C2148 /* BaseView.swift */,
+				F692BD1126264B5D004C2148 /* BaseViewController.swift */,
+				F692BD1626264B72004C2148 /* BaseViewModel.swift */,
+				F692BD1B26264B7E004C2148 /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F692BCE5262649BF004C2148 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCFB26264AF5004C2148 /* Client */,
+				F692BCFA26264AEF004C2148 /* Codable */,
+				F692BCF926264AE6004C2148 /* Router */,
+				F692BCFC26264B04004C2148 /* APIClient.swift */,
+				F692BD0226264B1A004C2148 /* APIConfiguration.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F692BCE6262649CE004C2148 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F692BCE7262649DB004C2148 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F692BCE8262649E1004C2148 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD2026264BAC004C2148 /* TypeAlias.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F692BCEA262649ED004C2148 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				F692BCEC26264A10004C2148 /* Constants.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
+		F692BCEB262649F4004C2148 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F692BC9D26264793004C2148 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F692BCF926264AE6004C2148 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F692BCFA26264AEF004C2148 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		F692BCFB26264AF5004C2148 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +338,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F692BCC426264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafio" */;
 			buildPhases = (
+				96E85F56F03680AD930862AC /* [CP] Check Pods Manifest.lock */,
 				F692BC9626264793004C2148 /* Sources */,
 				F692BC9726264793004C2148 /* Frameworks */,
 				F692BC9826264793004C2148 /* Resources */,
+				5B5CACCEEBC330F9B7099E1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +357,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F692BCC726264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioTests" */;
 			buildPhases = (
+				6B410E7E9F30E7CD719C5D80 /* [CP] Check Pods Manifest.lock */,
 				F692BCAC26264794004C2148 /* Sources */,
 				F692BCAD26264794004C2148 /* Frameworks */,
 				F692BCAE26264794004C2148 /* Resources */,
@@ -161,9 +376,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F692BCCA26264794004C2148 /* Build configuration list for PBXNativeTarget "southsystem-desafioUITests" */;
 			buildPhases = (
+				23C8D9E95EFB662CAAB9896A /* [CP] Check Pods Manifest.lock */,
 				F692BCB726264794004C2148 /* Sources */,
 				F692BCB826264794004C2148 /* Frameworks */,
 				F692BCB926264794004C2148 /* Resources */,
+				2C935AD5A47E1050346B5842 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,12 +460,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23C8D9E95EFB662CAAB9896A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-southsystem-desafio-southsystem-desafioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C935AD5A47E1050346B5842 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B5CACCEEBC330F9B7099E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B410E7E9F30E7CD719C5D80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-southsystem-desafioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E85F56F03680AD930862AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-southsystem-desafio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F692BC9626264793004C2148 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */,
+				F692BCED26264A10004C2148 /* Constants.swift in Sources */,
+				F692BCFD26264B04004C2148 /* APIClient.swift in Sources */,
+				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
+				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
+				F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */,
+				F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */,
+				F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */,
+				F692BD0826264B2E004C2148 /* BaseModel.swift in Sources */,
+				F692BD1C26264B7E004C2148 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +742,7 @@
 		};
 		F692BCC526264794004C2148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53277C5E19A68E9A28373472 /* Pods-southsystem-desafio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -433,6 +763,7 @@
 		};
 		F692BCC626264794004C2148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88CD9C1EC2789C6BD3ED5BA /* Pods-southsystem-desafio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +784,7 @@
 		};
 		F692BCC826264794004C2148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31689151DF750258151088EB /* Pods-southsystem-desafioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +807,7 @@
 		};
 		F692BCC926264794004C2148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1D536660C615D26AE87843 /* Pods-southsystem-desafioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +830,7 @@
 		};
 		F692BCCB26264794004C2148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +851,7 @@
 		};
 		F692BCCC26264794004C2148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E200B9486582D48350BA474 /* Pods-southsystem-desafio-southsystem-desafioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
