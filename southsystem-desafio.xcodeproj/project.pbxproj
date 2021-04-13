@@ -25,6 +25,8 @@
 		F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD2026264BAC004C2148 /* TypeAlias.swift */; };
 		F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3626264CCE004C2148 /* MainCoordinator.swift */; };
 		F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */; };
+		F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */; };
+		F692BD4B26264D9D004C2148 /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD4A26264D9D004C2148 /* TelaInicialView.swift */; };
 		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		F692BD2026264BAC004C2148 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		F692BD3626264CCE004C2148 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialViewController.swift; sourceTree = "<group>"; };
+		F692BD4A26264D9D004C2148 /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
 		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +229,7 @@
 		F692BCE026264970004C2148 /* View  */ = {
 			isa = PBXGroup;
 			children = (
+				F692BD4126264D71004C2148 /* TelaInicial */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -342,6 +347,15 @@
 				F692BD3C26264D0A004C2148 /* HomeCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F692BD4126264D71004C2148 /* TelaInicial */ = {
+			isa = PBXGroup;
+			children = (
+				F692BD4226264D8F004C2148 /* TelaInicialViewController.swift */,
+				F692BD4A26264D9D004C2148 /* TelaInicialView.swift */,
+			);
+			path = TelaInicial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,9 +599,11 @@
 				F692BCED26264A10004C2148 /* Constants.swift in Sources */,
 				F692BCFD26264B04004C2148 /* APIClient.swift in Sources */,
 				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
+				F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
 				F692BD3D26264D0A004C2148 /* HomeCoordinator.swift in Sources */,
 				F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */,
+				F692BD4B26264D9D004C2148 /* TelaInicialView.swift in Sources */,
 				F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */,
 				F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */,
 				F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */,
