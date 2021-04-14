@@ -38,17 +38,6 @@ class EventoModelElement {
         self.title = codable.title
     }
     
-    init(codable: DetalhesEventoCodable){
-        self.id = codable.id
-        self.date = codable.date
-        self.descriptionEvent = codable.descriptionEvent
-        self.image = codable.image
-        self.latitude = codable.latitude
-        self.longitude = codable.longitude
-        self.price = codable.price
-        self.title = codable.title
-    }
-    
     init(){
         self.id = ""
         self.date = 0
