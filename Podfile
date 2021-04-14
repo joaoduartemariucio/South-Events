@@ -19,6 +19,7 @@ target 'southsystem-desafio' do
   # MARK: - Componentes
   pod 'MaterialComponents/ProgressView'
   pod 'MaterialComponents/ProgressView+Theming'
+  pod 'Nuke'
 
   target 'southsystem-desafioTests' do
     inherit! :search_paths
