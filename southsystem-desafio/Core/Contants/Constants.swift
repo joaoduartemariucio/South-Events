@@ -33,7 +33,9 @@ struct Constants {
         }
         
         struct Image {
-            
+            static let erro_download_image = "erro_download_image"
+            static let fake_blur_image = "fake_blur_image"
+            static let ic_voltar = "ic_voltar"
         }
     }
 }
