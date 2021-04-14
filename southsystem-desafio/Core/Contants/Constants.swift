@@ -30,6 +30,8 @@ struct Constants {
     
     struct APP {
         
+        static let name = "South Events"
+        
         struct Key {
             
         }
@@ -39,6 +41,8 @@ struct Constants {
             static let fake_blur_image = "fake_blur_image"
             static let ic_voltar = "ic_voltar"
             static let ic_como_chegar = "ic_como_chegar"
+            static let ic_arroba = "ic_arroba"
+            static let ic_pessoa = "ic_pessoa"
         }
     }
 }

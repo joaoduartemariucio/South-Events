@@ -33,4 +33,11 @@ class TelaInicialCoordinator: Coordinator {
         vc.viewModel.setEventoId(eventoId)
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func fazerCheckinEvento(eventoId: String){
+        let vc = FazerCheckinViewController()
+        vc.coordinator = self
+        vc.viewModel.setEventoId(eventoId)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

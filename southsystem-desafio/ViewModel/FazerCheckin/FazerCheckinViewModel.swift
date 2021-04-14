@@ -7,9 +7,15 @@
 
 import Foundation
 
+enum FazerCheckinStatus {
+    case checkin_realizado, `default`
+}
+
 class FazerCheckinViewModel: NSObject, BaseViewModel {
     
     var disposable: DisposeBag = DisposeBag()
+    
+    var feedback: BehaviorRelay<FazerCheckinStatus> = BehaviorRelay<FazerCheckinStatus>(value: .default)
     
     var isFormularioPreenchido: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
     var isLoad: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
@@ -58,10 +64,9 @@ class FazerCheckinViewModel: NSObject, BaseViewModel {
             .subscribe(
                 onNext: { result in
                     self.isLoad.accept(false)
-                    
+                    self.feedback.accept(.checkin_realizado)
                 }, onError: { error in
                     self.isLoad.accept(false)
-                    
                     if let erro = error as? APIError {
                         let message = APIErrorMessageHelper.instance.retornaMensagemErroAPI(erro: erro)
                         self.mostrarMensagem.accept(message)

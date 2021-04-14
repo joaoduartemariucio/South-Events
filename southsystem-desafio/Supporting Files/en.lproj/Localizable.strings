@@ -6,11 +6,11 @@
   
 */
 "title_tela_inicio" = "South Events";
-"detalhes_evento" = "Event Details";
+"detalhes_evento" = "Details Event";
 "localizacao" = "Location";
 "data_evento" = "Date of the event: ";
 "valor_contribuicao" = "Contribution amount: ";
-"fazer_checkin" = "To check in";
+"fazer_checkin" = "To check-in";
 "erro_noDecoded" = "Error when searching for data, try reloading the screen";
 "erro_noContent" = "Nothing found in our database";
 "erro_badRequest" = "Failed to request the server refuses to respond, try to check the store if there is a new version of the app";
@@ -22,3 +22,8 @@
 "erro_internalServerError" = "Our server is not responding, try to resend your request later";
 "erro_api_nao_mapeado" = "Oops ... Something went wrong, please try to recharge the app screen";
 "local_do_evento" = "Event place";
+"nome_completo" = "Full name";
+"email" = "E-Mail";
+"fazer_checkin_instrucoes" = "To check-in just fill in the fields below and click on confirm.";
+"confirmar" = "Confirm";
+"check_in_realizado_sucesso" = "Your check-in was successful";

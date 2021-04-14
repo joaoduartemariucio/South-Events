@@ -11,7 +11,7 @@ extension UIViewController {
     
     func mostrarMensagem(_ texto: String, completation: @escaping(Bool) -> Void = {_ in }){
         let alert = UIAlertController(
-            title: "CFBundleName".translate,
+            title: Constants.APP.name,
             message: texto.translate,
             preferredStyle: UIAlertController.Style.alert
         )

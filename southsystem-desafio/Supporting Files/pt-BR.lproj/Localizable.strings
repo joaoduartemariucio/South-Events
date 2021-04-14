@@ -10,7 +10,7 @@
 "localizacao" = "Localização";
 "data_evento" = "Data do evento: ";
 "valor_contribuicao" = "Valor contribuição: ";
-"fazer_checkin" = "Fazer Check In";
+"fazer_checkin" = "Fazer Check-In";
 "erro_noDecoded" = "Erro ao buscar os dados tente, recarregar a tela";
 "erro_noContent" = "Nada encontrado em nossa base de dados";
 "erro_badRequest" = "Falha ao solicitar o servidor se recusa a responder, tente verificar na loja se existe uma versão nova do app";
@@ -22,3 +22,8 @@
 "erro_internalServerError" = "Nosso servidor não está respondendo, tente reenviar sua solicitação mais tarde";
 "erro_api_nao_mapeado" = "Opss.. Algo deu errado, por favor tente recarrecagar a tela do app";
 "local_do_evento" = "Local do evento";
+"nome_completo" = "Nome completo";
+"email" = "E-Mail";
+"fazer_checkin_instrucoes" = "Para fazer check-in basta preencher os campos abaixo e clicar em confirmar.";
+"confirmar" = "Confirmar";
+"check_in_realizado_sucesso" = "Seu check-in foi realizado com sucesso";
