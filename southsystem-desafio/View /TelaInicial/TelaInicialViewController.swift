@@ -26,8 +26,6 @@ class TelaInicialViewController: UIViewController, BaseViewController {
         super.viewDidLoad()
         
         title = "title_tela_inicio".translate
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .always
         
         bindView()
         viewModel.viewDidLoad()

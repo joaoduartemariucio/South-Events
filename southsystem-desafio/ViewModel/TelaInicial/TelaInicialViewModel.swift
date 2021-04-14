@@ -33,8 +33,12 @@ class TelaInicialViewModel: NSObject, BaseViewModel {
                     let eventosMapeados = result.map({ EventoModelElement(codable: $0) })
                     self.dataSource.accept(eventosMapeados)
                 }, onError: { error in
-                    print(error)
                     self.isLoad.accept(false)
+                    
+                    if let erro = error as? APIError {
+                        let message = APIErrorMessageHelper.instance.retornaMensagemErroAPI(erro: erro)
+                        self.mostrarMensagem.accept(message)
+                    }
                 }
             ).disposed(by: disposable)
     }

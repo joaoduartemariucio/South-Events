@@ -36,8 +36,11 @@ class DetalhesEventoViewModel: BaseViewModel {
                     self.detalhes.accept(EventoModelElement(codable: result))
                 },
                 onError: { error in
-                    print(error)
                     self.isLoad.accept(false)
+                    if let erro = error as? APIError {
+                        let message = APIErrorMessageHelper.instance.retornaMensagemErroAPI(erro: erro)
+                        self.mostrarMensagem.accept(message)
+                    }
                 }
             ).disposed(by: disposable)
     }

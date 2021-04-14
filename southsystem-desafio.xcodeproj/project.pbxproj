@@ -47,6 +47,7 @@
 		F692BDED2626782A004C2148 /* DetalhesEventoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BDEC2626782A004C2148 /* DetalhesEventoViewModel.swift */; };
 		F692BDF826267AA7004C2148 /* DetalhesEventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BDF726267AA7004C2148 /* DetalhesEventoModel.swift */; };
 		F692BE00262685F2004C2148 /* DetalhesEventoCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BDFF262685F2004C2148 /* DetalhesEventoCodable.swift */; };
+		F6EF97892627511D0040FC95 /* APIErrorMessageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EF97882627511D0040FC95 /* APIErrorMessageHelper.swift */; };
 		F9ADD8BBADB2DE3D0A1EE088 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		F692BDEC2626782A004C2148 /* DetalhesEventoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventoViewModel.swift; sourceTree = "<group>"; };
 		F692BDF726267AA7004C2148 /* DetalhesEventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventoModel.swift; sourceTree = "<group>"; };
 		F692BDFF262685F2004C2148 /* DetalhesEventoCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventoCodable.swift; sourceTree = "<group>"; };
+		F6EF97882627511D0040FC95 /* APIErrorMessageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorMessageHelper.swift; sourceTree = "<group>"; };
 		FB939ED9B08FC4FE33BDCC19 /* Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio-southsystem-desafioUITests/Pods-southsystem-desafio-southsystem-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -344,6 +346,7 @@
 			children = (
 				F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */,
 				F692BDBB26265D4C004C2148 /* TranslateHelper.swift */,
+				F6EF97882627511D0040FC95 /* APIErrorMessageHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -715,6 +718,7 @@
 				F692BD8F26265329004C2148 /* EventosCodable.swift in Sources */,
 				F692BD8A262652F6004C2148 /* EventosClient.swift in Sources */,
 				F692BD4326264D8F004C2148 /* TelaInicialViewController.swift in Sources */,
+				F6EF97892627511D0040FC95 /* APIErrorMessageHelper.swift in Sources */,
 				F692BDBC26265D4C004C2148 /* TranslateHelper.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
 				F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */,

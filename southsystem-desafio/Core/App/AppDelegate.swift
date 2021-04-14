@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         // MARK: Iniciando clico de navegação
         let navController = UINavigationController()
+        navController.navigationController?.navigationItem.largeTitleDisplayMode = .always
+        navController.navigationBar.prefersLargeTitles = true
+        
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
         

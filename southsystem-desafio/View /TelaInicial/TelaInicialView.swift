@@ -13,6 +13,7 @@ class TelaInicialView: UIView, BaseView {
         var tableView = UITableView()
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
         tableView.refreshControl = UIRefreshControl()
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
         tableView.register(TelaInicialViewCell.self, forCellReuseIdentifier: TelaInicialViewCell.identifier)
