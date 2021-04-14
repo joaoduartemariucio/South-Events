@@ -1,14 +1,13 @@
 //
-//  EventosCodable.swift
+//  DetalhesEventoCodable.swift
 //  southsystem-desafio
 //
 //  Created by João Vitor Duarte Mariucio on 13/04/21.
 //
 
 import Foundation
-
-// MARK: - EventosCodableElement
-struct EventoCodableElement: Codable {
+// MARK: - DetalhesEventoCodable
+struct DetalhesEventoCodable: Codable {
     
     let date: Int
     let description: String
@@ -22,5 +21,3 @@ struct EventoCodableElement: Codable {
         case image, longitude, latitude, price, title, id
     }
 }
-
-typealias EventosCodable = [EventoCodableElement]

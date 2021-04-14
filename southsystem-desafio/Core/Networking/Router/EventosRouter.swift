@@ -13,6 +13,7 @@ import Alamofire
 enum EventosRouter: APIConfiguration {
     
     case buscarEventos
+    case buscarDetalhesEvento(id: String)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -27,6 +28,8 @@ enum EventosRouter: APIConfiguration {
         switch self {
         case .buscarEventos:
             return .url([:])
+        case .buscarDetalhesEvento:
+            return .url([:])
         }
     }
     
@@ -35,6 +38,11 @@ enum EventosRouter: APIConfiguration {
         switch self {
         case .buscarEventos:
             return Constants.API.Routes.buscarEventos
+        case .buscarDetalhesEvento(let id):
+            var basePath = Constants.API.Routes.buscarEventos
+            basePath.append("/")
+            basePath.append(id)
+            return basePath
         }
     }
     
