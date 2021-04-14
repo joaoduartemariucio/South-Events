@@ -26,6 +26,14 @@ class DetalhesEventoViewModel: BaseViewModel {
         self.model.setEventoId(id: eventoId)
     }
     
+    func getLongitude() -> Double {
+        return detalhes.value.longitude
+    }
+    
+    func getLatitude() -> Double {
+        return detalhes.value.latitude
+    }
+    
     func buscarDetalhesDoEvento(){
         isLoad.accept(true)
         EventosClient.buscarDetalhesEvento(id: model.eventoId)

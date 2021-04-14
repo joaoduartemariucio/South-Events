@@ -1,5 +1,5 @@
 //
-//  TelaInicialView.swift
+//  EventosView.swift
 //  southsystem-desafio
 //
 //  Created by João Vitor Duarte Mariucio on 13/04/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TelaInicialView: UIView, BaseView {
+class EventosView: UIView, BaseView {
     
     var tableView: UITableView = {
         var tableView = UITableView()
@@ -16,7 +16,7 @@ class TelaInicialView: UIView, BaseView {
         tableView.showsVerticalScrollIndicator = false
         tableView.refreshControl = UIRefreshControl()
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
-        tableView.register(TelaInicialViewCell.self, forCellReuseIdentifier: TelaInicialViewCell.identifier)
+        tableView.register(EventosViewCell.self, forCellReuseIdentifier: EventosViewCell.identifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()

@@ -22,7 +22,7 @@ class TelaInicialCoordinator: Coordinator {
     }
     
     func telaInicial(){
-        let vc = TelaInicialViewController()
+        let vc = EventosViewController()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }

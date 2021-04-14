@@ -17,10 +17,10 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        telaInicial()
+        telaEventos()
     }
     
-    func telaInicial(){
+    func telaEventos(){
         let child = TelaInicialCoordinator(navigationController: navigationController)
         child.parentCoordinator = self
         childCoordinators.append(child)

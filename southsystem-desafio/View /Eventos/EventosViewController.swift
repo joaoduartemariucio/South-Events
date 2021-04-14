@@ -1,5 +1,5 @@
 //
-//  TelaInicialViewController.swift
+//  EventosViewController.swift
 //  southsystem-desafio
 //
 //  Created by João Vitor Duarte Mariucio on 13/04/21.
@@ -7,16 +7,16 @@
 
 import UIKit
 
-class TelaInicialViewController: UIViewController, BaseViewController {
+class EventosViewController: UIViewController, BaseViewController {
 
-    typealias View = TelaInicialView
-    typealias ViewModel = TelaInicialViewModel
+    typealias View = EventosView
+    typealias ViewModel = EventosViewModel
     typealias Navigation = TelaInicialCoordinator
     
     var coordinator: TelaInicialCoordinator?
     var disposable: DisposeBag = DisposeBag()
-    var viewModel: TelaInicialViewModel = TelaInicialViewModel()
-    var presentationView: TelaInicialView = TelaInicialView()
+    var viewModel: EventosViewModel = EventosViewModel()
+    var presentationView: EventosView = EventosView()
     
     override func loadView() {
         view = presentationView
@@ -39,8 +39,8 @@ class TelaInicialViewController: UIViewController, BaseViewController {
                     .tableView
                     .rx
                     .items(
-                        cellIdentifier: TelaInicialViewCell.identifier,
-                        cellType: TelaInicialViewCell.self
+                        cellIdentifier: EventosViewCell.identifier,
+                        cellType: EventosViewCell.self
                     )
             ) { row, data, cell in
                 cell.selectionStyle = .none

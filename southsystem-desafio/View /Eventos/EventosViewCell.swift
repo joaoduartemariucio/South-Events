@@ -1,5 +1,5 @@
 //
-//  TelaInicialViewCell.swift
+//  EventosViewCell.swift
 //  southsystem-desafio
 //
 //  Created by João Vitor Duarte Mariucio on 13/04/21.
@@ -8,9 +8,9 @@
 import UIKit
 import Nuke
 
-class TelaInicialViewCell: UITableViewCell {
+class EventosViewCell: UITableViewCell {
     
-    static let identifier = "TelaInicialViewCell"
+    static let identifier = "EventosViewCell"
     
     let dateFormatterr = DateFormatter()
     

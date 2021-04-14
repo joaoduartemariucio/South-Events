@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TelaInicialViewModel: NSObject, BaseViewModel {
+class EventosViewModel: NSObject, BaseViewModel {
     
     var disposable: DisposeBag = DisposeBag()
 

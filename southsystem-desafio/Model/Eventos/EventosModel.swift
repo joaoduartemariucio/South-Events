@@ -11,15 +11,15 @@ import Foundation
 class EventoModelElement {
     
     var date: Int
-    var description: String
+    var descriptionEvent: String
     var image: String
     var longitude, latitude, price: Double
     var title, id: String
     
-    init(id: String, date: Int, description: String, image: String, longitude: Double, latitude: Double, price: Double, title: String) {
+    init(id: String, date: Int, descriptionEvent: String, image: String, longitude: Double, latitude: Double, price: Double, title: String) {
         self.id = id
         self.date = date
-        self.description = description
+        self.descriptionEvent = descriptionEvent
         self.image = image
         self.longitude = longitude
         self.latitude = latitude
@@ -30,7 +30,7 @@ class EventoModelElement {
     init(codable: EventoCodableElement){
         self.id = codable.id
         self.date = codable.date
-        self.description = codable.description
+        self.descriptionEvent = codable.descriptionEvent
         self.image = codable.image
         self.latitude = codable.latitude
         self.longitude = codable.longitude
@@ -41,7 +41,7 @@ class EventoModelElement {
     init(codable: DetalhesEventoCodable){
         self.id = codable.id
         self.date = codable.date
-        self.description = codable.description
+        self.descriptionEvent = codable.descriptionEvent
         self.image = codable.image
         self.latitude = codable.latitude
         self.longitude = codable.longitude
@@ -52,12 +52,16 @@ class EventoModelElement {
     init(){
         self.id = ""
         self.date = 0
-        self.description = ""
+        self.descriptionEvent = ""
         self.image = ""
         self.latitude = 0
         self.longitude = 0
         self.price = 0
         self.title = ""
+    }
+    
+    var description: String {
+        return "<\(type(of: self)): id = \(id) title = \(title) description = \(descriptionEvent) image = \(image) price = \(price) latitude = \(latitude) longitude = \(longitude)>"
     }
 }
 
