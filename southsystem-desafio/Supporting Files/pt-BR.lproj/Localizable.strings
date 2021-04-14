@@ -5,3 +5,9 @@
   Created by João Vitor Duarte Mariucio on 13/04/21.
   
 */
+"title_tela_inicio" = "Eventos South";
+"detalhes_evento" = "Detalhes do evento";
+"localizacao" = "Localização";
+"data_evento" = "Data do evento: ";
+"valor_contribuicao" = "Valor contribuição: ";
+"fazer_checkin" = "Fazer Check In";
