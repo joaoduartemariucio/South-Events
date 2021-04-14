@@ -49,4 +49,10 @@ class ContentImageView: UIView {
             Nuke.loadImage(with: url, options: options, into: imagem)
         }
     }
+    
+    func setImage(named: String){
+        if let image = UIImage(named: named) {
+            imagem.image = image.withRenderingMode(.alwaysTemplate)
+        }
+    }
 }
