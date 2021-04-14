@@ -26,4 +26,11 @@ class TelaInicialCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func detalhesEvento(_ eventoId: String){
+        let vc = DetalhesEventoViewController()
+        vc.coordinator = self
+        vc.viewModel.setEventoId(eventoId)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
