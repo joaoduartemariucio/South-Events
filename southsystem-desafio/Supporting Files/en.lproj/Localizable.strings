@@ -21,3 +21,4 @@
 "erro_conflict" = "Resource poorly processed, try to resend your request";
 "erro_internalServerError" = "Our server is not responding, try to resend your request later";
 "erro_api_nao_mapeado" = "Oops ... Something went wrong, please try to recharge the app screen";
+"local_do_evento" = "Event place";

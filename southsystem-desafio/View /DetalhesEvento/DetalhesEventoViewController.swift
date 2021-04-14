@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MapKit
 
 class DetalhesEventoViewController: UIViewController, BaseViewController {
     
@@ -34,6 +34,17 @@ class DetalhesEventoViewController: UIViewController, BaseViewController {
     
     func bindView() {
         
+        presentationView.btnParticipar.rx.tap.bind {
+            
+        }.disposed(by: disposable)
+        
+        presentationView.contentComoChegar.rx
+            .tapGesture()
+            .when(.recognized)
+            .bind { tap in
+                self.abrirMapaIos()
+            }.disposed(by: disposable)
+        
         viewModel.mostrarMensagem.bind { value in
             if !value.isEmpty {
                 self.mostrarMensagem(value)
@@ -51,6 +62,19 @@ class DetalhesEventoViewController: UIViewController, BaseViewController {
         viewModel.detalhes.bind { value in
             self.presentationView.configViewValue(detalhes: value)
         }.disposed(by: disposable)
+    }
+    
+    func abrirMapaIos(){
+        
+        let coordinate = CLLocationCoordinate2D(latitude: viewModel.getLatitude(), longitude: viewModel.getLongitude())
+        
+        let source = MKMapItem(placemark: MKPlacemark(coordinate: coordinate))
+        source.name = "local_do_evento".translate
+        
+        MKMapItem.openMaps(
+          with: [source],
+          launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        )
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

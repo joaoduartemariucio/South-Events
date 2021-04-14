@@ -21,3 +21,4 @@
 "erro_conflict" = "Recurso mal processado, tente reenviar sua solicitação";
 "erro_internalServerError" = "Nosso servidor não está respondendo, tente reenviar sua solicitação mais tarde";
 "erro_api_nao_mapeado" = "Opss.. Algo deu errado, por favor tente recarrecagar a tela do app";
+"local_do_evento" = "Local do evento";

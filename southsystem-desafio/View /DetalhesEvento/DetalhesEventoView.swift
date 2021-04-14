@@ -93,6 +93,17 @@ class DetalhesEventoView: UIView, BaseView {
         return lbl
     }()
     
+    var contentComoChegar: ContentImageView = {
+        var view = ContentImageView()
+        view.clipsToBounds = true
+        view.backgroundColor = .systemBlue
+        view.imagem.tintColor = .white
+        view.layer.cornerRadius = 9
+        view.setImage(named: Constants.APP.Image.ic_como_chegar)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     var btnParticipar: UIButton = {
         var btn = UIButton()
         btn.setTitle("fazer_checkin".translate, for: .normal)
@@ -204,6 +215,14 @@ class DetalhesEventoView: UIView, BaseView {
             localizacaoMapa.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
             localizacaoMapa.topAnchor.constraint(equalTo: lblLocalizacaoInfo.bottomAnchor, constant:size.height * 0.025),
             localizacaoMapa.heightAnchor.constraint(equalToConstant: size.height * 0.20)
+        ])
+        
+        viewContentAll.addSubview(contentComoChegar)
+        NSLayoutConstraint.activate([
+            contentComoChegar.trailingAnchor.constraint(equalTo: localizacaoMapa.trailingAnchor, constant: -size.width * 0.025),
+            contentComoChegar.bottomAnchor.constraint(equalTo: localizacaoMapa.bottomAnchor, constant: -size.height * 0.010),
+            contentComoChegar.heightAnchor.constraint(equalToConstant: 36),
+            contentComoChegar.widthAnchor.constraint(equalToConstant: 36)
         ])
     }
     
