@@ -19,17 +19,22 @@ class TelaInicialViewModel: NSObject, BaseViewModel {
         buscarEventos()
     }
     
+    func atualizarTela(){
+        buscarEventos()
+    }
+    
     func buscarEventos(){
+        isLoad.accept(true)
         EventosClient.buscarEventos()
             .asObservable()
             .subscribe(
                 onNext: { result in
-                    
+                    self.isLoad.accept(false)
                     let eventosMapeados = result.map({ EventoModelElement(codable: $0) })
                     self.dataSource.accept(eventosMapeados)
-                    
                 }, onError: { error in
                     print(error)
+                    self.isLoad.accept(false)
                 }
             ).disposed(by: disposable)
     }
