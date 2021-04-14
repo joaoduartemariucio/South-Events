@@ -9,7 +9,7 @@ import Foundation
 
 class FazerCheckinClient: APIClient {
     
-    static func fazerCheckin(dadosCheckin: FazerCheckinModel) -> Observable<EventosCodable> {
+    static func fazerCheckin(dadosCheckin: FazerCheckinModel) -> Observable<FazerCheckinCodable> {
         return request(FazerCheckinRouter.fazerCheckin(dadosCheckin: dadosCheckin))
     }
 }
