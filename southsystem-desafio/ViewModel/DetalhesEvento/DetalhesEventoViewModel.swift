@@ -23,7 +23,11 @@ class DetalhesEventoViewModel: BaseViewModel {
     }
     
     func setEventoId(_ eventoId: String){
-        self.model.setEventoId(id: eventoId)
+        model.setEventoId(id: eventoId)
+    }
+    
+    func getEventoId()-> String {
+        return model.eventoId
     }
     
     func getLongitude() -> Double {

@@ -10,6 +10,11 @@
 		554406EA000E10C1E96A93A1 /* Pods_southsystem_desafioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E2ECF453F1A8E4A239C491 /* Pods_southsystem_desafioTests.framework */; };
 		5B327BDEA5E8DEC2D2699672 /* Pods_southsystem_desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8768E2A767C1C216F1AB18 /* Pods_southsystem_desafio.framework */; };
 		F674DAAD262793F600A9D39D /* FazerCheckinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAAC262793F600A9D39D /* FazerCheckinModel.swift */; };
+		F674DACD26279B3800A9D39D /* FazerCheckinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DACC26279B3800A9D39D /* FazerCheckinViewModel.swift */; };
+		F674DAD326279B4F00A9D39D /* FazerCheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAD226279B4F00A9D39D /* FazerCheckinView.swift */; };
+		F674DAD826279B5600A9D39D /* FazerCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAD726279B5600A9D39D /* FazerCheckinViewController.swift */; };
+		F674DADD2627A14100A9D39D /* FormularioField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DADC2627A14100A9D39D /* FormularioField.swift */; };
+		F674DAE72627B18600A9D39D /* FazerCheckinCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAE62627B18600A9D39D /* FazerCheckinCodable.swift */; };
 		F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BC9D26264793004C2148 /* AppDelegate.swift */; };
 		F692BCA726264794004C2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA626264794004C2148 /* Assets.xcassets */; };
 		F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA826264794004C2148 /* LaunchScreen.storyboard */; };
@@ -81,6 +86,11 @@
 		C88CD9C1EC2789C6BD3ED5BA /* Pods-southsystem-desafio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-southsystem-desafio.release.xcconfig"; path = "Target Support Files/Pods-southsystem-desafio/Pods-southsystem-desafio.release.xcconfig"; sourceTree = "<group>"; };
 		CA1ADD38937DB91A54703460 /* Pods_southsystem_desafio_southsystem_desafioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_southsystem_desafio_southsystem_desafioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F674DAAC262793F600A9D39D /* FazerCheckinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinModel.swift; sourceTree = "<group>"; };
+		F674DACC26279B3800A9D39D /* FazerCheckinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinViewModel.swift; sourceTree = "<group>"; };
+		F674DAD226279B4F00A9D39D /* FazerCheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinView.swift; sourceTree = "<group>"; };
+		F674DAD726279B5600A9D39D /* FazerCheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinViewController.swift; sourceTree = "<group>"; };
+		F674DADC2627A14100A9D39D /* FormularioField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioField.swift; sourceTree = "<group>"; };
+		F674DAE62627B18600A9D39D /* FazerCheckinCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinCodable.swift; sourceTree = "<group>"; };
 		F692BC9A26264793004C2148 /* southsystem-desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "southsystem-desafio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BC9D26264793004C2148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F692BCA626264794004C2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -187,6 +197,8 @@
 		F674DAA9262793C600A9D39D /* FazerCheckin */ = {
 			isa = PBXGroup;
 			children = (
+				F674DAD226279B4F00A9D39D /* FazerCheckinView.swift */,
+				F674DAD726279B5600A9D39D /* FazerCheckinViewController.swift */,
 			);
 			path = FazerCheckin;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 		F674DAAA262793DF00A9D39D /* FazerCheckin */ = {
 			isa = PBXGroup;
 			children = (
+				F674DACC26279B3800A9D39D /* FazerCheckinViewModel.swift */,
 			);
 			path = FazerCheckin;
 			sourceTree = "<group>";
@@ -336,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				F692BDD526266616004C2148 /* ContentImageView.swift */,
+				F674DADC2627A14100A9D39D /* FormularioField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -424,6 +438,7 @@
 			isa = PBXGroup;
 			children = (
 				F692BD8E26265329004C2148 /* EventosCodable.swift */,
+				F674DAE62627B18600A9D39D /* FazerCheckinCodable.swift */,
 			);
 			path = Codable;
 			sourceTree = "<group>";
@@ -744,6 +759,7 @@
 				F692BDAD26265CE8004C2148 /* UView+Extensions.swift in Sources */,
 				F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */,
 				F692BDED2626782A004C2148 /* DetalhesEventoViewModel.swift in Sources */,
+				F674DACD26279B3800A9D39D /* FazerCheckinViewModel.swift in Sources */,
 				F692BCED26264A10004C2148 /* Constants.swift in Sources */,
 				F692BCFD26264B04004C2148 /* APIClient.swift in Sources */,
 				F692BD0D26264B45004C2148 /* BaseView.swift in Sources */,
@@ -753,6 +769,7 @@
 				F692BD4326264D8F004C2148 /* EventosViewController.swift in Sources */,
 				F6EF97892627511D0040FC95 /* APIErrorMessageHelper.swift in Sources */,
 				F692BDBC26265D4C004C2148 /* TranslateHelper.swift in Sources */,
+				F674DAE72627B18600A9D39D /* FazerCheckinCodable.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
 				F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */,
 				F692BD3D26264D0A004C2148 /* TelaInicialCoordinator.swift in Sources */,
@@ -761,6 +778,7 @@
 				F6EF97A026275CCB0040FC95 /* FazerCheckinRouter.swift in Sources */,
 				F692BD5126264E20004C2148 /* EventosViewModel.swift in Sources */,
 				F692BD4B26264D9D004C2148 /* EventosView.swift in Sources */,
+				F674DADD2627A14100A9D39D /* FormularioField.swift in Sources */,
 				F692BDE5262677A6004C2148 /* DetalhesEventoViewController.swift in Sources */,
 				F6EF97A526275D180040FC95 /* FazerCheckinClient.swift in Sources */,
 				F692BD0326264B1A004C2148 /* APIConfiguration.swift in Sources */,
@@ -768,9 +786,11 @@
 				F692BD5926264F55004C2148 /* UIColor+Extensions.swift in Sources */,
 				F692BD1726264B72004C2148 /* BaseViewModel.swift in Sources */,
 				F692BDA226265AB8004C2148 /* EventosViewCell.swift in Sources */,
+				F674DAD326279B4F00A9D39D /* FazerCheckinView.swift in Sources */,
 				F692BD1226264B5D004C2148 /* BaseViewController.swift in Sources */,
 				F692BDDF2626778D004C2148 /* DetalhesEventoView.swift in Sources */,
 				F692BD0826264B2E004C2148 /* BaseModel.swift in Sources */,
+				F674DAD826279B5600A9D39D /* FazerCheckinViewController.swift in Sources */,
 				F692BD1C26264B7E004C2148 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

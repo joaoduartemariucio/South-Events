@@ -35,7 +35,7 @@ class DetalhesEventoViewController: UIViewController, BaseViewController {
     func bindView() {
         
         presentationView.btnParticipar.rx.tap.bind {
-            
+            self.coordinator?.fazerCheckinEvento(eventoId: self.viewModel.getEventoId())
         }.disposed(by: disposable)
         
         presentationView.contentComoChegar.rx

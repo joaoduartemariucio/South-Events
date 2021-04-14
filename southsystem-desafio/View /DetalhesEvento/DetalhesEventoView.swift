@@ -26,7 +26,7 @@ class DetalhesEventoView: UIView, BaseView {
         return stack
     }()
     
-    var viewContentAll: UIView = {
+    var contentView: UIView = {
         var view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -131,20 +131,13 @@ class DetalhesEventoView: UIView, BaseView {
         
         backgroundColor = .white
         
-        setupScrollAndStack()
-        setupContentImagemEvento()
-        setupLabelNomeEvento()
-        setupLabelDescricaoEvento()
-        setupLabelLocalizacaoInfo()
-        setupMapLocalizacao()
-        setupLabelDataEvento()
-        setupLabelValorParticipacao()
-        setupButtonParticipar()
-        
+        setupScroll()
+        setupStack()
+        setupContentView()
         useLoadingDefault()
     }
     
-    func setupScrollAndStack() {
+    func setupScroll(){
         
         addSubview(scroll)
         NSLayoutConstraint.activate([
@@ -153,6 +146,9 @@ class DetalhesEventoView: UIView, BaseView {
             scroll.trailingAnchor.constraint(equalTo: trailingAnchor),
             scroll.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+    }
+    
+    func setupStack(){
         
         scroll.addSubview(stack)
         NSLayoutConstraint.activate([
@@ -162,62 +158,74 @@ class DetalhesEventoView: UIView, BaseView {
             stack.bottomAnchor.constraint(equalTo: scroll.bottomAnchor),
             stack.widthAnchor.constraint(equalToConstant: size.width)
         ])
+    }
+    
+    func setupContentView(){
         
-        stack.addArrangedSubview(viewContentAll)
+        stack.addArrangedSubview(contentView)
+        
+        setupContentImagemEvento()
+        setupLabelNomeEvento()
+        setupLabelDescricaoEvento()
+        setupLabelLocalizacaoInfo()
+        setupMapLocalizacao()
+        setupLabelDataEvento()
+        setupLabelValorParticipacao()
+        setupButtonParticipar()
     }
     
     func setupContentImagemEvento(){
         
-        viewContentAll.addSubview(contentImagemEvento)
+        contentView.addSubview(contentImagemEvento)
         NSLayoutConstraint.activate([
-            contentImagemEvento.topAnchor.constraint(equalTo: viewContentAll.topAnchor),
-            contentImagemEvento.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor),
-            contentImagemEvento.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor),
+            contentImagemEvento.topAnchor.constraint(equalTo: contentView.topAnchor),
+            contentImagemEvento.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            contentImagemEvento.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             contentImagemEvento.heightAnchor.constraint(equalToConstant: size.height * 0.35)
         ])
     }
     
     func setupLabelNomeEvento(){
         
-        viewContentAll.addSubview(lblNomeEvento)
+        contentView.addSubview(lblNomeEvento)
         NSLayoutConstraint.activate([
-            lblNomeEvento.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.05),
-            lblNomeEvento.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.05),
+            lblNomeEvento.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.05),
+            lblNomeEvento.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.05),
             lblNomeEvento.topAnchor.constraint(equalTo: contentImagemEvento.bottomAnchor, constant: size.height * 0.025)
         ])
     }
     
     func setupLabelDescricaoEvento(){
         
-        viewContentAll.addSubview(lblDescricaoEvento)
+        contentView.addSubview(lblDescricaoEvento)
         NSLayoutConstraint.activate([
-            lblDescricaoEvento.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            lblDescricaoEvento.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            lblDescricaoEvento.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            lblDescricaoEvento.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             lblDescricaoEvento.topAnchor.constraint(equalTo: lblNomeEvento.bottomAnchor, constant:size.height * 0.025)
         ])
     }
     
     func setupLabelLocalizacaoInfo(){
         
-        viewContentAll.addSubview(lblLocalizacaoInfo)
+        contentView.addSubview(lblLocalizacaoInfo)
         NSLayoutConstraint.activate([
-            lblLocalizacaoInfo.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            lblLocalizacaoInfo.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            lblLocalizacaoInfo.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            lblLocalizacaoInfo.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             lblLocalizacaoInfo.topAnchor.constraint(equalTo: lblDescricaoEvento.bottomAnchor, constant:size.height * 0.025)
         ])
     }
     
     func setupMapLocalizacao(){
         
-        viewContentAll.addSubview(localizacaoMapa)
+        contentView.addSubview(localizacaoMapa)
         NSLayoutConstraint.activate([
-            localizacaoMapa.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            localizacaoMapa.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            localizacaoMapa.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            localizacaoMapa.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             localizacaoMapa.topAnchor.constraint(equalTo: lblLocalizacaoInfo.bottomAnchor, constant:size.height * 0.025),
             localizacaoMapa.heightAnchor.constraint(equalToConstant: size.height * 0.20)
         ])
         
-        viewContentAll.addSubview(contentComoChegar)
+        contentView.addSubview(contentComoChegar)
         NSLayoutConstraint.activate([
             contentComoChegar.trailingAnchor.constraint(equalTo: localizacaoMapa.trailingAnchor, constant: -size.width * 0.025),
             contentComoChegar.bottomAnchor.constraint(equalTo: localizacaoMapa.bottomAnchor, constant: -size.height * 0.010),
@@ -228,40 +236,40 @@ class DetalhesEventoView: UIView, BaseView {
     
     func setupLabelDataEvento(){
         
-        viewContentAll.addSubview(lblDataEvento)
+        contentView.addSubview(lblDataEvento)
         NSLayoutConstraint.activate([
-            lblDataEvento.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            lblDataEvento.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            lblDataEvento.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            lblDataEvento.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             lblDataEvento.topAnchor.constraint(equalTo: localizacaoMapa.bottomAnchor, constant:size.height * 0.025)
         ])
     }
     
     func setupLabelValorParticipacao(){
         
-        viewContentAll.addSubview(lblValorParticipacao)
+        contentView.addSubview(lblValorParticipacao)
         NSLayoutConstraint.activate([
-            lblValorParticipacao.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            lblValorParticipacao.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            lblValorParticipacao.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            lblValorParticipacao.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             lblValorParticipacao.topAnchor.constraint(equalTo: lblDataEvento.bottomAnchor, constant:size.height * 0.010)
         ])
     }
     
     func setupButtonParticipar(){
         
-        viewContentAll.addSubview(btnParticipar)
+        contentView.addSubview(btnParticipar)
         NSLayoutConstraint.activate([
-            btnParticipar.leadingAnchor.constraint(equalTo: viewContentAll.leadingAnchor, constant: size.width * 0.075),
-            btnParticipar.trailingAnchor.constraint(equalTo: viewContentAll.trailingAnchor, constant: -size.width * 0.075),
+            btnParticipar.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: size.width * 0.075),
+            btnParticipar.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -size.width * 0.075),
             btnParticipar.heightAnchor.constraint(equalToConstant: 50),
             btnParticipar.topAnchor.constraint(equalTo: lblValorParticipacao.bottomAnchor, constant:size.height * 0.025),
-            btnParticipar.bottomAnchor.constraint(equalTo: viewContentAll.bottomAnchor, constant: -size.width * 0.075)
+            btnParticipar.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -size.width * 0.075)
         ])
     }
     
     func configViewValue(detalhes: EventoModelElement) {
         
         lblNomeEvento.text = detalhes.title
-        lblDescricaoEvento.text = detalhes.description
+        lblDescricaoEvento.text = detalhes.descriptionEvent
         contentImagemEvento.setImage(url: detalhes.image)
                 
         let localizacaoEvento = CLLocationCoordinate2D(latitude: detalhes.latitude, longitude: detalhes.longitude)
