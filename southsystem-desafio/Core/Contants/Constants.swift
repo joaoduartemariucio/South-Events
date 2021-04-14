@@ -22,7 +22,9 @@ struct Constants {
         }
         
         struct ParametersKeys {
-            
+           static let eventId = "eventId"
+           static let name = "name"
+           static let email = "email"
         }
     }
     
@@ -36,6 +38,7 @@ struct Constants {
             static let erro_download_image = "erro_download_image"
             static let fake_blur_image = "fake_blur_image"
             static let ic_voltar = "ic_voltar"
+            static let ic_como_chegar = "ic_como_chegar"
         }
     }
 }

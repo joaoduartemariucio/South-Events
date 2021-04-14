@@ -10,16 +10,21 @@ import Foundation
 // MARK: - EventosCodableElement
 struct EventoCodableElement: Codable {
     
+    let id: String
     let date: Int
-    let description: String
+    let descriptionEvent: String
     let image: String
     let longitude, latitude, price: Double
-    let title, id: String
+    let title: String
 
     enum CodingKeys: String, CodingKey {
         case date
-        case description = "description"
+        case descriptionEvent = "description"
         case image, longitude, latitude, price, title, id
+    }
+
+    var description: String {
+        return "<\(type(of: self)): id = \(id) title = \(title) description = \(descriptionEvent) image = \(image) price = \(price) latitude = \(latitude) longitude = \(longitude)>"
     }
 }
 

@@ -1,46 +1,42 @@
 //
-//  EventosRouter.swift
+//  FazerCheckinRouter.swift
 //  southsystem-desafio
 //
-//  Created by João Vitor Duarte Mariucio on 13/04/21.
+//  Created by João Vitor Duarte Mariucio on 14/04/21.
 //
 
 import Foundation
 import Alamofire
 
-enum EventosRouter: APIConfiguration {
+enum FazerCheckinRouter: APIConfiguration {
     
-    case buscarEventos
-    case buscarDetalhesEvento(id: String)
+    case fazerCheckin(dadosCheckin: FazerCheckinModel)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
         default:
-            return .get
+            return .post
         }
     }
     
     // MARK: - Parameters
     var parameters: RequestParams {
         switch self {
-        case .buscarEventos:
-            return .url([:])
-        case .buscarDetalhesEvento:
-            return .url([:])
+        case .fazerCheckin(let dadosCheckin):
+            return .body([
+                Constants.API.ParametersKeys.eventId: dadosCheckin.eventId,
+                Constants.API.ParametersKeys.name: dadosCheckin.name,
+                Constants.API.ParametersKeys.email: dadosCheckin.email
+            ])
         }
     }
     
     // MARK: - Path
     var path: String {
         switch self {
-        case .buscarEventos:
-            return Constants.API.Routes.buscarEventos
-        case .buscarDetalhesEvento(let id):
-            var basePath = Constants.API.Routes.buscarEventos
-            basePath.append("/")
-            basePath.append(id)
-            return basePath
+        case .fazerCheckin:
+            return Constants.API.Routes.fazerCheckin
         }
     }
     

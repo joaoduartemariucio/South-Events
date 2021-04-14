@@ -13,7 +13,7 @@ class EventosClient: APIClient {
         return request(EventosRouter.buscarEventos)
     }
     
-    static func buscarDetalhesEvento(id: String) -> Observable<DetalhesEventoCodable> {
+    static func buscarDetalhesEvento(id: String) -> Observable<EventoCodableElement> {
         return request(EventosRouter.buscarDetalhesEvento(id: id))
     }
 }
