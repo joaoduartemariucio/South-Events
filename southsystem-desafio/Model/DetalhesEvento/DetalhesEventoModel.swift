@@ -10,7 +10,7 @@ import Foundation
 class DetalhesEventoModel {
     
     var eventoId: String
-    var detalhes: EventoCodableElement?
+    var detalhes: EventoModelElement?
     
     init(eventoId: String) {
         self.eventoId = eventoId
@@ -24,7 +24,7 @@ class DetalhesEventoModel {
         self.eventoId = id
     }
     
-    func setEventoDetalhes(_ detalhes: EventoCodableElement) {
+    func setEventoDetalhes(_ detalhes: EventoModelElement) {
         self.detalhes = detalhes
     }
     

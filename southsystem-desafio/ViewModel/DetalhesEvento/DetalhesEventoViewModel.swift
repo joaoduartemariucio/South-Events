@@ -49,6 +49,7 @@ class DetalhesEventoViewModel: BaseViewModel {
             .subscribe(
                 onNext: { result in
                     self.isLoad.accept(false)
+                    self.model.setEventoDetalhes(EventoModelElement(codable: result))
                     self.detalhes.accept(EventoModelElement(codable: result))
                 },
                 onError: { error in

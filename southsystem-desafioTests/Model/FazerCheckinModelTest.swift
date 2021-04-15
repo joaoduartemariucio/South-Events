@@ -6,27 +6,43 @@
 //
 
 import XCTest
+@testable import southsystem_desafio
 
 class FazerCheckinModelTest: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    // MARK: - Mock Fazer Check-in
+    let checkin1 = FazerCheckinModel(eventId: "1", name: "Joao Vitor", email: "joaovitorduartemariucio@gmail.com")
+    let checkin2 = FazerCheckinModel()
+    
+    /// Cenario para testar check-in com dados vazios
+    func testCheckinSemInformacoes() {
+        XCTAssertTrue(checkin2.eventId.isEmpty)
+        XCTAssertTrue(checkin2.name.isEmpty)
+        XCTAssertTrue(checkin2.email.isEmpty)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    /// Cenario para testar check-in com dados
+    func testCheckinComInformacoes() {
+        XCTAssertTrue(checkin1.eventId == "1")
+        XCTAssertTrue(checkin1.name == "Joao Vitor")
+        XCTAssertTrue(checkin1.email == "joaovitorduartemariucio@gmail.com")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    /// Cenario para testar função setEventId do check-in
+    func testSetEventId() {
+        checkin1.setEventId("2")
+        XCTAssertTrue(checkin1.eventId == "2")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    /// Cenario para testar função setName do check-in
+    func testSetName() {
+        checkin1.setName("João Vitor")
+        XCTAssertTrue(checkin1.name == "João Vitor")
     }
-
+    
+    /// Cenario para testar função setEmail do check-in
+    func testSetEmail() {
+        checkin1.setEmail("jvdmtester@gmail.com")
+        XCTAssertTrue(checkin1.email == "jvdmtester@gmail.com")
+    }
 }
