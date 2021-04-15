@@ -15,10 +15,12 @@
 		F674DAD826279B5600A9D39D /* FazerCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAD726279B5600A9D39D /* FazerCheckinViewController.swift */; };
 		F674DADD2627A14100A9D39D /* FormularioField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DADC2627A14100A9D39D /* FormularioField.swift */; };
 		F674DAE72627B18600A9D39D /* FazerCheckinCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAE62627B18600A9D39D /* FazerCheckinCodable.swift */; };
+		F674DAF62627CEF500A9D39D /* EventoModelElementTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAF52627CEF500A9D39D /* EventoModelElementTest.swift */; };
+		F674DAFE2627D70100A9D39D /* DetalhesEventoModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DAFD2627D70100A9D39D /* DetalhesEventoModelTest.swift */; };
+		F674DB032627D71600A9D39D /* FazerCheckinModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674DB022627D71600A9D39D /* FazerCheckinModelTest.swift */; };
 		F692BC9E26264793004C2148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BC9D26264793004C2148 /* AppDelegate.swift */; };
 		F692BCA726264794004C2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA626264794004C2148 /* Assets.xcassets */; };
 		F692BCAA26264794004C2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692BCA826264794004C2148 /* LaunchScreen.storyboard */; };
-		F692BCB526264794004C2148 /* southsystem_desafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCB426264794004C2148 /* southsystem_desafioTests.swift */; };
 		F692BCC026264794004C2148 /* southsystem_desafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */; };
 		F692BCED26264A10004C2148 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCEC26264A10004C2148 /* Constants.swift */; };
 		F692BCFD26264B04004C2148 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BCFC26264B04004C2148 /* APIClient.swift */; };
@@ -90,13 +92,15 @@
 		F674DAD726279B5600A9D39D /* FazerCheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinViewController.swift; sourceTree = "<group>"; };
 		F674DADC2627A14100A9D39D /* FormularioField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioField.swift; sourceTree = "<group>"; };
 		F674DAE62627B18600A9D39D /* FazerCheckinCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinCodable.swift; sourceTree = "<group>"; };
+		F674DAF52627CEF500A9D39D /* EventoModelElementTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoModelElementTest.swift; sourceTree = "<group>"; };
+		F674DAFD2627D70100A9D39D /* DetalhesEventoModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventoModelTest.swift; sourceTree = "<group>"; };
+		F674DB022627D71600A9D39D /* FazerCheckinModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerCheckinModelTest.swift; sourceTree = "<group>"; };
 		F692BC9A26264793004C2148 /* southsystem-desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "southsystem-desafio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BC9D26264793004C2148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F692BCA626264794004C2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F692BCA926264794004C2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F692BCAB26264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F692BCB026264794004C2148 /* southsystem-desafioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "southsystem-desafioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F692BCB426264794004C2148 /* southsystem_desafioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = southsystem_desafioTests.swift; sourceTree = "<group>"; };
 		F692BCB626264794004C2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F692BCBB26264794004C2148 /* southsystem-desafioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "southsystem-desafioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692BCBF26264794004C2148 /* southsystem_desafioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = southsystem_desafioUITests.swift; sourceTree = "<group>"; };
@@ -217,6 +221,16 @@
 			path = FazerCheckin;
 			sourceTree = "<group>";
 		};
+		F674DAF12627C62100A9D39D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F674DAF52627CEF500A9D39D /* EventoModelElementTest.swift */,
+				F674DAFD2627D70100A9D39D /* DetalhesEventoModelTest.swift */,
+				F674DB022627D71600A9D39D /* FazerCheckinModelTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F692BC9126264793004C2148 = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +271,7 @@
 		F692BCB326264794004C2148 /* southsystem-desafioTests */ = {
 			isa = PBXGroup;
 			children = (
-				F692BCB426264794004C2148 /* southsystem_desafioTests.swift */,
+				F674DAF12627C62100A9D39D /* Model */,
 				F692BCB626264794004C2148 /* Info.plist */,
 			);
 			path = "southsystem-desafioTests";
@@ -583,6 +597,7 @@
 					};
 					F692BCAF26264794004C2148 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = F692BC9926264793004C2148;
 					};
 					F692BCBA26264794004C2148 = {
@@ -795,7 +810,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F692BCB526264794004C2148 /* southsystem_desafioTests.swift in Sources */,
+				F674DB032627D71600A9D39D /* FazerCheckinModelTest.swift in Sources */,
+				F674DAFE2627D70100A9D39D /* DetalhesEventoModelTest.swift in Sources */,
+				F674DAF62627CEF500A9D39D /* EventoModelElementTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,6 +1035,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 534P4F9R6Y;
 				INFOPLIST_FILE = "southsystem-desafioTests/Info.plist";
@@ -1029,6 +1047,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.joaoduartemariucio.southsystem-desafioTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/southsystem-desafio.app/southsystem-desafio";
@@ -1041,6 +1060,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 534P4F9R6Y;
 				INFOPLIST_FILE = "southsystem-desafioTests/Info.plist";

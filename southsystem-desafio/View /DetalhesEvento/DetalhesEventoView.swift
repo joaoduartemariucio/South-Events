@@ -273,23 +273,14 @@ class DetalhesEventoView: UIView, BaseView {
         contentImagemEvento.setImage(url: detalhes.image)
                 
         let localizacaoEvento = CLLocationCoordinate2D(latitude: detalhes.latitude, longitude: detalhes.longitude)
-        
         let region = MKCoordinateRegion(center: localizacaoEvento, latitudinalMeters: 100, longitudinalMeters: 100)
-        
         localizacaoMapa.setRegion(region, animated: true)
-        
         let annotation = MKPointAnnotation()
         annotation.coordinate = localizacaoEvento
-        
         localizacaoMapa.addAnnotation(annotation)
         
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
-        
-        let date = detalhes.date
-        lblDataEvento.text = "\("data_evento".translate)\(dateFormatter.string(from: date))"
+        let dataFormatada = detalhes.getDataHoraString(fmtHora: .medium, fmtData: .medium)
+        lblDataEvento.text = "\("data_evento".translate)\(dataFormatada)"
         lblValorParticipacao.text = "\("valor_contribuicao".translate)R$\(detalhes.price)"
     }
 }

@@ -12,8 +12,6 @@ class EventosViewCell: UITableViewCell {
     
     static let identifier = "EventosViewCell"
     
-    let dateFormatterr = DateFormatter()
-    
     var cardEvento: UIView = {
         var view = UIView()
         view.backgroundColor = .white
@@ -153,17 +151,13 @@ class EventosViewCell: UITableViewCell {
         ])
     }
     
-    func configCell(_ data: EventoModelElement){
-        lblTitle.text = data.title
-        imagem.setImage(url: data.image)
+    func configCell(_ model: EventoModelElement){
+        lblTitle.text = model.title
+        imagem.setImage(url: model.image)
         
-        dateFormatterr.timeStyle = .short
-        lblHora.text = dateFormatterr.string(from: data.date)
+        lblHora.text = model.getDataHoraString(fmtHora: .short, fmtData: .none)
         
-        dateFormatterr.dateFormat = "dd"
-        lblDia.text = dateFormatterr.string(from: data.date)
-        
-        dateFormatterr.dateFormat = "MMM"
-        lblMes.text = dateFormatterr.string(from: data.date)
+        lblDia.text = model.getDataHoraString(formato: "dd")
+        lblMes.text = model.getDataHoraString(formato: "MMM")
     }
 }

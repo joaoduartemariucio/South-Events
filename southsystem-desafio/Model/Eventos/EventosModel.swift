@@ -7,15 +7,17 @@
 
 import Foundation
 
-// MARK: - EventosCodableElement
+// MARK: - EventoModelElement
 class EventoModelElement {
     
-    var id: String
-    var date: Date
-    var descriptionEvent: String
-    var image: String
-    var longitude, latitude, price: Double
-    var title: String
+    let dateFormatterr = DateFormatter()
+    
+    private (set) var id: String
+    private (set) var date: Date
+    private (set) var descriptionEvent: String
+    private (set) var image: String
+    private (set) var longitude, latitude, price: Double
+    private (set) var title: String
     
     init(id: String, date: Double, descriptionEvent: String, image: String, longitude: Double, latitude: Double, price: Double, title: String) {
         self.id = id
@@ -41,13 +43,24 @@ class EventoModelElement {
     
     init(){
         self.id = ""
-        self.date = Date()
+        self.date = Date(timeIntervalSince1970: 0)
         self.descriptionEvent = ""
         self.image = ""
         self.latitude = 0
         self.longitude = 0
         self.price = 0
         self.title = ""
+    }
+    
+    func getDataHoraString(formato: String) -> String {
+        dateFormatterr.dateFormat = formato
+        return dateFormatterr.string(from: self.date)
+    }
+    
+    func getDataHoraString(fmtHora: DateFormatter.Style, fmtData: DateFormatter.Style) -> String {
+        dateFormatterr.timeStyle = fmtHora
+        dateFormatterr.dateStyle = fmtData
+        return dateFormatterr.string(from: self.date)
     }
     
     var description: String {

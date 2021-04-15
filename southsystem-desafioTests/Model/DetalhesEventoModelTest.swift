@@ -1,14 +1,13 @@
 //
-//  southsystem_desafioTests.swift
+//  DetalhesEventoModelTest.swift
 //  southsystem-desafioTests
 //
-//  Created by João Vitor Duarte Mariucio on 13/04/21.
+//  Created by João Vitor Duarte Mariucio on 14/04/21.
 //
 
 import XCTest
-@testable import southsystem_desafio
 
-class southsystem_desafioTests: XCTestCase {
+class DetalhesEventoModelTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
