@@ -157,17 +157,13 @@ class EventosViewCell: UITableViewCell {
         lblTitle.text = data.title
         imagem.setImage(url: data.image)
         
-        
-        let date = Date(timeIntervalSince1970: Double(data.date))
-        
-        
         dateFormatterr.timeStyle = .short
-        lblHora.text = dateFormatterr.string(from: date)
+        lblHora.text = dateFormatterr.string(from: data.date)
         
         dateFormatterr.dateFormat = "dd"
-        lblDia.text = dateFormatterr.string(from: date)
+        lblDia.text = dateFormatterr.string(from: data.date)
         
         dateFormatterr.dateFormat = "MMM"
-        lblMes.text = dateFormatterr.string(from: date)
+        lblMes.text = dateFormatterr.string(from: data.date)
     }
 }

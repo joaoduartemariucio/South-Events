@@ -10,15 +10,16 @@ import Foundation
 // MARK: - EventosCodableElement
 class EventoModelElement {
     
-    var date: Int
+    var id: String
+    var date: Date
     var descriptionEvent: String
     var image: String
     var longitude, latitude, price: Double
-    var title, id: String
+    var title: String
     
-    init(id: String, date: Int, descriptionEvent: String, image: String, longitude: Double, latitude: Double, price: Double, title: String) {
+    init(id: String, date: Double, descriptionEvent: String, image: String, longitude: Double, latitude: Double, price: Double, title: String) {
         self.id = id
-        self.date = date
+        self.date = Date(timeIntervalSince1970: date)
         self.descriptionEvent = descriptionEvent
         self.image = image
         self.longitude = longitude
@@ -29,7 +30,7 @@ class EventoModelElement {
     
     init(codable: EventoCodableElement){
         self.id = codable.id
-        self.date = codable.date
+        self.date = Date(timeIntervalSince1970: codable.date)
         self.descriptionEvent = codable.descriptionEvent
         self.image = codable.image
         self.latitude = codable.latitude
@@ -40,7 +41,7 @@ class EventoModelElement {
     
     init(){
         self.id = ""
-        self.date = 0
+        self.date = Date()
         self.descriptionEvent = ""
         self.image = ""
         self.latitude = 0

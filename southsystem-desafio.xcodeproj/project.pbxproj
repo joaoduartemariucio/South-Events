@@ -40,7 +40,6 @@
 		F692BD8526265295004C2148 /* EventosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD8426265295004C2148 /* EventosRouter.swift */; };
 		F692BD8A262652F6004C2148 /* EventosClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD89262652F6004C2148 /* EventosClient.swift */; };
 		F692BD8F26265329004C2148 /* EventosCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD8E26265329004C2148 /* EventosCodable.swift */; };
-		F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */; };
 		F692BD9D262658B6004C2148 /* EventosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BD9C262658B6004C2148 /* EventosModel.swift */; };
 		F692BDA226265AB8004C2148 /* EventosViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BDA126265AB8004C2148 /* EventosViewCell.swift */; };
 		F692BDAD26265CE8004C2148 /* UView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692BDAC26265CE8004C2148 /* UView+Extensions.swift */; };
@@ -124,7 +123,6 @@
 		F692BD8426265295004C2148 /* EventosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosRouter.swift; sourceTree = "<group>"; };
 		F692BD89262652F6004C2148 /* EventosClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosClient.swift; sourceTree = "<group>"; };
 		F692BD8E26265329004C2148 /* EventosCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosCodable.swift; sourceTree = "<group>"; };
-		F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+DecodeHelpers.swift"; sourceTree = "<group>"; };
 		F692BD9C262658B6004C2148 /* EventosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosModel.swift; sourceTree = "<group>"; };
 		F692BDA126265AB8004C2148 /* EventosViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosViewCell.swift; sourceTree = "<group>"; };
 		F692BDAC26265CE8004C2148 /* UView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UView+Extensions.swift"; sourceTree = "<group>"; };
@@ -390,7 +388,6 @@
 		F692BCE7262649DB004C2148 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F692BD93262653D6004C2148 /* Encode+DecodeHelpers.swift */,
 				F692BDBB26265D4C004C2148 /* TranslateHelper.swift */,
 				F6EF97882627511D0040FC95 /* APIErrorMessageHelper.swift */,
 			);
@@ -771,7 +768,6 @@
 				F692BDBC26265D4C004C2148 /* TranslateHelper.swift in Sources */,
 				F674DAE72627B18600A9D39D /* FazerCheckinCodable.swift in Sources */,
 				F692BD2126264BAC004C2148 /* TypeAlias.swift in Sources */,
-				F692BD94262653D6004C2148 /* Encode+DecodeHelpers.swift in Sources */,
 				F692BD3D26264D0A004C2148 /* TelaInicialCoordinator.swift in Sources */,
 				F674DAAD262793F600A9D39D /* FazerCheckinModel.swift in Sources */,
 				F692BD3726264CCE004C2148 /* MainCoordinator.swift in Sources */,

@@ -288,7 +288,7 @@ class DetalhesEventoView: UIView, BaseView {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
         
-        let date = Date(timeIntervalSince1970: Double(detalhes.date))
+        let date = detalhes.date
         lblDataEvento.text = "\("data_evento".translate)\(dateFormatter.string(from: date))"
         lblValorParticipacao.text = "\("valor_contribuicao".translate)R$\(detalhes.price)"
     }

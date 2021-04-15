@@ -11,7 +11,7 @@ import Foundation
 struct EventoCodableElement: Codable {
     
     let id: String
-    let date: Int
+    let date: Double
     let descriptionEvent: String
     let image: String
     let longitude, latitude, price: Double

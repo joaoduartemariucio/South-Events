@@ -31,8 +31,6 @@ class APIErrorMessageHelper {
             return "erro_conflict".translate
         case .internalServerError:
             return "erro_internalServerError".translate
-        default:
-            return "erro_api_nao_mapeado".translate
         }
     }
 }
