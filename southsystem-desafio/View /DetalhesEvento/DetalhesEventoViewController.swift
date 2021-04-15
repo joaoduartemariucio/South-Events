@@ -23,6 +23,13 @@ class DetalhesEventoViewController: UIViewController, BaseViewController {
         view = presentationView
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let btnCompartilharEvento = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(compartilharEvento))
+        self.navigationItem.rightBarButtonItem = btnCompartilharEvento
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +69,27 @@ class DetalhesEventoViewController: UIViewController, BaseViewController {
         viewModel.detalhes.bind { value in
             self.presentationView.configViewValue(detalhes: value)
         }.disposed(by: disposable)
+    }
+    
+    @objc func compartilharEvento(){
+        
+        guard let imagemEvento = presentationView.contentImagemEvento.imagem.image else { return }
+        let descricaoEvento = "\(viewModel.getDescricaoEvento())"
+        
+        let activityViewController = UIActivityViewController(
+            activityItems:  [imagemEvento, descricaoEvento],
+            applicationActivities: nil
+        )
+        
+        activityViewController.excludedActivityTypes = [
+            UIActivity.ActivityType.print,
+            UIActivity.ActivityType.postToWeibo,
+            UIActivity.ActivityType.copyToPasteboard,
+            UIActivity.ActivityType.addToReadingList,
+            UIActivity.ActivityType.postToVimeo
+        ]
+        
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     func abrirMapaIos(){

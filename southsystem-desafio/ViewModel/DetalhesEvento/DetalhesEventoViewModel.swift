@@ -38,6 +38,10 @@ class DetalhesEventoViewModel: BaseViewModel {
         return detalhes.value.latitude
     }
     
+    func getDescricaoEvento() -> String {
+        return detalhes.value.descriptionEvent
+    }
+    
     func buscarDetalhesDoEvento(){
         isLoad.accept(true)
         EventosClient.buscarDetalhesEvento(id: model.eventoId)
