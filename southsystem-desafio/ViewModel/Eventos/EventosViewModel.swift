@@ -38,6 +38,8 @@ class EventosViewModel: NSObject, BaseViewModel {
                     if let erro = error as? APIError {
                         let message = APIErrorMessageHelper.instance.retornaMensagemErroAPI(erro: erro)
                         self.mostrarMensagem.accept(message)
+                    }else {
+                        self.mostrarMensagem.accept("erro_api_nao_mapeado".translate)
                     }
                 }
             ).disposed(by: disposable)

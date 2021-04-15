@@ -11,7 +11,7 @@ class APIErrorMessageHelper {
      
     static let instance = APIErrorMessageHelper()
     
-    func retornaMensagemErroAPI(erro: APIError) -> String{
+    func retornaMensagemErroAPI(erro: APIError) -> String {
         switch erro {
         case .noDecoded:
             return "erro_noDecoded".translate
